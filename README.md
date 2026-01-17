@@ -37,7 +37,7 @@ Both operations work using the same 8 bit adder. The adder takes the first input
 The 2 bit counter has 2 D flip-flops. The inputs are D0 = ~Q0 and D1 = Q0 XOR Q1. All inputs are connected to Done signal with AND gates to reset to 0.
 
 6. 3 Bit Counter:
-The 3 bit counter has 3 D flip-flops. The inputs are D0 = ~Q0,  D1 = Q0 XOR Q1 and D2 = . All inputs are connected to Done signal with AND gates to reset to 0.
+The 3 bit counter has 3 D flip-flops. The inputs are D0 = ~Q0,  D1 = Q0 XOR Q1 and D2 = Q0Q1 XOR Q2. All inputs are connected to Done signal with AND gates to reset to 0.
 
 7. Combination / Main Circuit:
 The combination uses MUX - DEMUX - splitter - RAM and the other parts explained int this file. Bus signals are determined by the CU and the specified signals are sent to the corresponding MUXs and DEMUXs.
